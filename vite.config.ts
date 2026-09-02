@@ -43,7 +43,7 @@ export default defineConfig(({ command }) => ({
     }),
     // Only needed for production builds that deploy a server (e.g. Vercel/Netlify/Cloudflare).
     // Static hosts like GitHub Pages just serve the "dist/client" output and don't need this.
-    ...(command === "build" ? [nitro({ preset: "cloudflare-module" })] : []),
+    ...(command === "build" ? [nitro({ preset: "vercel" })] : []),
     viteReact(),
   ],
 }));
