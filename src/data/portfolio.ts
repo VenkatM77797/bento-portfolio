@@ -45,7 +45,9 @@ export type EducationEntry = {
   school: string;
   degree: string;
   field: string;
+  location: string;
   year: string;
+  coursework: string[];
 };
 
 export type Repo = {
@@ -118,7 +120,7 @@ export const portfolio: Portfolio = {
     bio: "Full Stack Developer focused on building responsive web applications, scalable APIs, and reliable end-to-end user experiences.",
 
     about:
-      "Software developer with 3+ years of experience building full-stack web applications using React, TypeScript, JavaScript, Node.js, Python, and SQL. Experienced in developing responsive frontend interfaces, REST APIs, database-driven applications, and reusable components. I enjoy solving practical engineering problems, improving application performance, and continuously expanding my skills across full-stack development and AI technologies.",
+      "Software developer with 3+ years of experience designing and building modern, scalable full-stack web applications using React, Next.js, TypeScript, JavaScript, Node.js, Python, and SQL. Experienced in creating responsive and reusable user interfaces, developing and integrating REST APIs, implementing authentication, managing database-driven applications, and deploying solutions to the cloud. Strong focus on **clean code, application performance, responsive design, and practical problem-solving**, with a growing interest in AI and intelligent application development.",
 
     avatar: "/images/logo.png",
 
@@ -269,16 +271,34 @@ export const portfolio: Portfolio = {
 
   education: [
     {
-      school: "University of Porto",
-      degree: "MSc",
-      field: "Software Engineering",
-      year: "2019",
+      school: "Pittsburg State University",
+      degree: "Master of Science",
+      field: "Information Technology",
+      location: "Pittsburg, Kansas, USA",
+      year: "2024",
+      coursework: [
+        "Advanced Database Systems",
+        "Software Engineering",
+        "Web Development",
+        "Cloud Computing",
+        "Data Analytics",
+        "Information Security",
+      ],
     },
     {
-      school: "University of Porto",
-      degree: "BSc",
-      field: "Computer Science",
-      year: "2017",
+      school: "Andhra University",
+      degree: "Bachelor of Technology",
+      field: "Computer Science and Engineering",
+      location: "Visakhapatnam, Andhra Pradesh, India",
+      year: "2022",
+      coursework: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Database Management Systems",
+        "Operating Systems",
+        "Computer Networks",
+        "Software Engineering",
+      ],
     },
   ],
 
