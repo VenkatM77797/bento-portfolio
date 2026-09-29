@@ -106,25 +106,36 @@ export type Portfolio = {
 
 export const portfolio: Portfolio = {
   personal: {
-    name: "Ada Marlowe",
-    shortName: "Ada",
+    name: "Venkat Mandarapu",
+    shortName: "Venkat",
+
     role: "Full Stack Developer",
-    tagline: "React · TypeScript · Node",
-    location: "Lisbon, Portugal",
-    bio: "I build thoughtful, scalable web applications and enjoy turning complex problems into simple experiences.",
+
+    tagline: "REACT · TYPESCRIPT · NODE.JS",
+
+    location: "Texas, United States",
+
+    bio: "Full Stack Developer focused on building responsive web applications, scalable APIs, and reliable end-to-end user experiences.",
+
     about:
-      "I'm a full stack developer with a soft spot for design systems and developer experience. Most of my work lives at the seam between a well-modelled backend and an interface that feels obvious to use. Lately I've been building AI-assisted document tooling, shipping design systems used by multiple product teams, and writing about the boring engineering that makes products feel fast. Outside of work you'll find me running along the Tejo, restoring mechanical keyboards, and reviewing far too many pull requests for fun.",
-    avatar: "/images/avatar.jpg",
-    email: "hello@example.com",
-    yearsOfExperience: 7,
+      "Software developer with 3+ years of experience building full-stack web applications using React, TypeScript, JavaScript, Node.js, Python, and SQL. Experienced in developing responsive frontend interfaces, REST APIs, database-driven applications, and reusable components. I enjoy solving practical engineering problems, improving application performance, and continuously expanding my skills across full-stack development and AI technologies.",
+
+    avatar: "/images/logo.png",
+
+    email: "venkat77797@gmail.com",
+
+    yearsOfExperience: 3,
+
     available: true,
-    availabilityLabel: "Available for opportunities",
+
+    availabilityLabel: "Open to opportunities",
+
     resume: "/resume.pdf",
   },
 
   social: {
-    github: "https://github.com/github",
-    linkedin: "https://www.linkedin.com/in/linkedin",
+    github: "https://github.com/VenkatM77797",
+    linkedin: "https://www.linkedin.com/in/venkat-mandarapu/",
     website: "https://example.com",
   },
 
@@ -215,34 +226,44 @@ export const portfolio: Portfolio = {
 
   experience: [
     {
-      company: "Northwind Labs",
-      role: "Senior Full Stack Engineer",
-      location: "Lisbon, Portugal",
-      start: "2023",
+      company: "ECHO IT Solutions",
+      role: "Software Developer",
+      location: "India",
+      start: "2026",
       end: "Present",
       description:
-        "Lead the platform team building the design system and API layer powering four customer-facing products.",
+        "I build modern full-stack applications with responsive React interfaces, scalable Node.js/TypeScript/Python APIs, and SQL/PostgreSQL databases. I focus on clean user experiences, reliable backend systems, and cloud deployment with AWS.",
       tech: ["TypeScript", "Next.js", "NestJS"],
     },
     {
-      company: "Kestrel Digital",
-      role: "Full Stack Engineer",
+      company: "ElevanceSkills",
+      role: "Full Stack Web Developer",
       location: "Remote",
-      start: "2021",
-      end: "2023",
+      start: "2026",
+      end: "2026",
       description:
-        "Shipped a multi-tenant billing platform and cut median API latency by 60% through query and cache work.",
+        "Developed full-stack web applications using **React.js, Tailwind CSS, Node.js, Express, MongoDB, and Firebase**, including REST APIs and JWT-based authentication. Participated in end-to-end development, testing, debugging, and deployment through project-based internship programs.",
       tech: ["React", "Node.js", "PostgreSQL"],
     },
     {
-      company: "Fieldstone",
-      role: "Frontend Engineer",
-      location: "Porto, Portugal",
-      start: "2019",
-      end: "2021",
+      company: "Pittsburg State University",
+      role: "Teaching Assistant ",
+      location: "Pittsburg, United States",
+      start: "2023",
+      end: "2024",
       description:
-        "Rebuilt the customer portal as a component-driven React app with a full accessibility pass.",
-      tech: ["React", "Tailwind CSS"],
+        "Tutored students in DSA, OOP, DBMS, OS, Python, Java, and C++, simplifying complex computer science concepts and problem-solving approaches. Provided hands-on guidance with coding projects, assignments, Git, Linux, and exam preparation.",
+      tech: ["DSA", "Python"],
+    },
+    {
+      company: "Kaamkashi Multi-Resources Pvt. Ltd",
+      role: "Frontend Developer",
+      location: "Pittsburg, United States",
+      start: "2021",
+      end: "2022",
+      description:
+        "Developed responsive frontend applications using React.js, Next.js, and Redux, translating Figma designs into polished, mobile-first interfaces. Integrated REST APIs, optimized application performance, and collaborated in an agile startup environment.",
+      tech: ["ReactJS", "Next.js"],
     },
   ],
 

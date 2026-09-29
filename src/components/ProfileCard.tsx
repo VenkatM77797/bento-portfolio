@@ -1,11 +1,12 @@
-import { Briefcase, MapPin } from "lucide-react";
+import { ArrowUpRight, MapPin } from "lucide-react";
 import { useState } from "react";
 import { BentoCard } from "@/components/BentoCard";
 import { portfolio } from "@/data/portfolio";
 
 export function ProfileCard({ index = 0 }: { index?: number }) {
-  const { personal } = portfolio;
+  const { personal, social } = portfolio;
   const [failed, setFailed] = useState(false);
+
   const initials = personal.name
     .split(" ")
     .map((part) => part.charAt(0))
@@ -13,46 +14,61 @@ export function ProfileCard({ index = 0 }: { index?: number }) {
     .join("");
 
   return (
-    <BentoCard index={index} className="flex flex-col gap-4">
-      <div className="relative aspect-square w-full overflow-hidden rounded-xl border border-border bg-muted">
+    <BentoCard index={index} className="group flex flex-col p-3">
+      {/* Portrait */}
+      <div className="relative min-h-0 flex-1 overflow-hidden rounded-xl bg-muted">
         {personal.avatar && !failed ? (
           <img
             src={personal.avatar}
             alt={`Portrait of ${personal.name}`}
-            width={640}
-            height={640}
-            loading="lazy"
             onError={() => setFailed(true)}
-            className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.04]"
+            className="h-full min-h-[310px] w-full object-cover
+                       transition-transform duration-700
+                       group-hover:scale-[1.025]"
           />
         ) : (
-          <div className="grid h-full w-full place-items-center font-display text-4xl font-bold text-muted-foreground">
-            {initials}
+          <div className="grid min-h-[310px] h-full place-items-center">
+            <span className="font-display text-5xl font-bold text-muted-foreground">
+              {initials}
+            </span>
           </div>
         )}
+
+        {/* subtle gradient for text readability */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/55 to-transparent" />
+
+        {/* Location directly on image */}
+        <div className="absolute bottom-4 left-4 flex items-center gap-1.5 text-xs text-white/90">
+          <MapPin className="h-3.5 w-3.5" />
+          {personal.location}
+        </div>
       </div>
 
-      <div>
-        <h2 className="text-lg font-semibold">{personal.name}</h2>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{personal.bio}</p>
-      </div>
+      {/* Identity */}
+      <div className="flex items-end justify-between gap-4 px-1 pb-1 pt-4">
+        <div>
+          <p className="label-mono mb-1 text-muted-foreground">
+            Software Developer
+          </p>
 
-      <dl className="mt-auto space-y-2 border-t border-border pt-4 text-sm">
-        <div className="flex items-center gap-2">
-          <Briefcase className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
-          <dt className="sr-only">Current role</dt>
-          <dd className="min-w-0 truncate">{personal.role}</dd>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {personal.name}
+          </h2>
         </div>
-        <div className="flex items-center gap-2">
-          <MapPin className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
-          <dt className="sr-only">Location</dt>
-          <dd className="min-w-0 truncate">{personal.location}</dd>
-        </div>
-        <div className="flex items-baseline gap-2">
-          <dt className="label-mono">Experience</dt>
-          <dd className="font-mono text-sm">{personal.yearsOfExperience} yrs</dd>
-        </div>
-      </dl>
+
+        <a
+          href={social.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View LinkedIn profile"
+          className="grid h-10 w-10 shrink-0 place-items-center
+                     rounded-full border border-border
+                     transition-all duration-200
+                     hover:bg-foreground hover:text-background"
+        >
+          <ArrowUpRight className="h-4 w-4" />
+        </a>
+      </div>
     </BentoCard>
   );
 }
