@@ -1,10 +1,10 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { i as projectFilters, n as navLinks, r as portfolio } from "./router-DUbaYG2U.mjs";
-import { a as Menu, c as Linkedin, d as Github, f as GitFork, g as ArrowUpRight, h as Briefcase, i as Moon, l as Hammer, m as Download, n as Sun, o as MapPin, p as FileText, r as Star, s as Mail, t as X, u as GraduationCap } from "../_libs/lucide-react.mjs";
+import { i as projectFilters, n as navLinks, r as portfolio } from "./router-BeFC89fY.mjs";
+import { _ as ArrowUpRight, a as Menu, c as Linkedin, d as Github, f as GitFork, g as Award, h as ChevronDown, i as Moon, l as Hammer, m as ChevronUp, n as Sun, o as MapPin, p as ExternalLink, r as Star, s as Mail, t as X, u as GraduationCap } from "../_libs/lucide-react.mjs";
 import { t as clsx } from "../_libs/clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-KUGgmlah.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Ci6ATYk-.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Footer() {
@@ -13,35 +13,18 @@ function Footer() {
 		className: "border-t border-border py-8",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto grid max-w-6xl gap-3 px-4 sm:flex sm:items-center sm:justify-between sm:px-6",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-					className: "text-sm text-muted-foreground",
-					children: [
-						"© ",
-						year,
-						" ",
-						portfolio.personal.name
-					]
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "font-mono text-xs text-muted-foreground",
-					children: "Built with React + TypeScript"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-					href: portfolio.template.repo,
-					target: "_blank",
-					rel: "noreferrer noopener",
-					className: "inline-flex items-center gap-2 font-mono text-xs text-muted-foreground transition-colors hover:text-foreground",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Github, {
-							className: "h-3.5 w-3.5",
-							"aria-hidden": "true"
-						}),
-						portfolio.template.name,
-						" template"
-					]
-				})
-			]
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				className: "text-sm text-muted-foreground",
+				children: [
+					"© ",
+					year,
+					" ",
+					portfolio.personal.name
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "font-mono text-xs text-muted-foreground",
+				children: "Built with React + TypeScript"
+			})]
 		})
 	});
 }
@@ -380,6 +363,7 @@ function EducationCard({ index = 0 }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(BentoCard, {
 		index,
 		as: "section",
+		id: "education",
 		"aria-labelledby": "education-heading",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -395,26 +379,49 @@ function EducationCard({ index = 0 }) {
 				children: "Education"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-				className: "mt-4 space-y-4",
+				className: "mt-5 space-y-5",
 				children: portfolio.education.map((entry) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-					className: "border-b border-border pb-4 last:border-0 last:pb-0",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-2",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-							className: "truncate text-sm font-semibold",
-							children: entry.school
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "font-mono text-[11px] text-muted-foreground",
-							children: entry.year
-						})]
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						className: "mt-1 text-sm text-muted-foreground",
-						children: [
-							entry.degree,
-							" · ",
-							entry.field
-						]
-					})]
+					className: "border-b border-border pb-5 last:border-0 last:pb-0",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "text-sm font-semibold leading-snug",
+								children: entry.school
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "font-mono text-[11px] text-muted-foreground",
+								children: entry.year
+							})]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+							className: "mt-1.5 text-sm text-muted-foreground",
+							children: [
+								entry.degree,
+								" · ",
+								entry.field
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "mt-2 flex items-center gap-1.5 text-xs text-muted-foreground",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
+								className: "h-3 w-3 shrink-0",
+								"aria-hidden": "true"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: entry.location })]
+						}),
+						entry.coursework.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "mt-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "label-mono mb-2 text-[10px] text-muted-foreground",
+								children: "Relevant Coursework"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "flex flex-wrap gap-1.5",
+								children: entry.coursework.map((course) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "rounded-md border border-border bg-muted/40 px-2 py-1 text-[11px] text-muted-foreground",
+									children: course
+								}, course))
+							})]
+						})
+					]
 				}, `${entry.school}-${entry.year}`))
 			})
 		]
@@ -725,85 +732,50 @@ function OpenSourceCard({ index = 0 }) {
 	});
 }
 function ProfileCard({ index = 0 }) {
-	const { personal } = portfolio;
+	const { personal, social } = portfolio;
 	const [failed, setFailed] = (0, import_react.useState)(false);
 	const initials = personal.name.split(" ").map((part) => part.charAt(0)).slice(0, 2).join("");
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(BentoCard, {
 		index,
-		className: "flex flex-col gap-4",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "relative aspect-square w-full overflow-hidden rounded-xl border border-border bg-muted",
-				children: personal.avatar && !failed ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+		className: "group flex flex-col p-3",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "relative min-h-0 flex-1 overflow-hidden rounded-xl bg-muted",
+			children: [
+				personal.avatar && !failed ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 					src: personal.avatar,
 					alt: `Portrait of ${personal.name}`,
-					width: 640,
-					height: 640,
-					loading: "lazy",
 					onError: () => setFailed(true),
-					className: "h-full w-full object-cover transition-transform duration-500 hover:scale-[1.04]"
+					className: "h-full min-h-[310px] w-full object-cover\n                       transition-transform duration-700\n                       group-hover:scale-[1.025]"
 				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "grid h-full w-full place-items-center font-display text-4xl font-bold text-muted-foreground",
-					children: initials
-				})
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: "text-lg font-semibold",
-				children: personal.name
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "mt-1 text-sm leading-relaxed text-muted-foreground",
-				children: personal.bio
-			})] }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("dl", {
-				className: "mt-auto space-y-2 border-t border-border pt-4 text-sm",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-2",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Briefcase, {
-								className: "h-3.5 w-3.5 shrink-0 text-muted-foreground",
-								"aria-hidden": "true"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-								className: "sr-only",
-								children: "Current role"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
-								className: "min-w-0 truncate",
-								children: personal.role
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-2",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
-								className: "h-3.5 w-3.5 shrink-0 text-muted-foreground",
-								"aria-hidden": "true"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-								className: "sr-only",
-								children: "Location"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
-								className: "min-w-0 truncate",
-								children: personal.location
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-baseline gap-2",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-							className: "label-mono",
-							children: "Experience"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("dd", {
-							className: "font-mono text-sm",
-							children: [personal.yearsOfExperience, " yrs"]
-						})]
+					className: "grid min-h-[310px] h-full place-items-center",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "font-display text-5xl font-bold text-muted-foreground",
+						children: initials
 					})
-				]
-			})
-		]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/55 to-transparent" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "absolute bottom-4 left-4 flex items-center gap-1.5 text-xs text-white/90",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, { className: "h-3.5 w-3.5" }), personal.location]
+				})
+			]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "flex items-end justify-between gap-4 px-1 pb-1 pt-4",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "label-mono mb-1 text-muted-foreground",
+				children: "Software Developer"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+				className: "text-xl font-semibold tracking-tight",
+				children: personal.name
+			})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+				href: social.linkedin,
+				target: "_blank",
+				rel: "noreferrer",
+				"aria-label": "View LinkedIn profile",
+				className: "grid h-10 w-10 shrink-0 place-items-center\n                     rounded-full border border-border\n                     transition-all duration-200\n                     hover:bg-foreground hover:text-background",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, { className: "h-4 w-4" })
+			})]
+		})]
 	});
 }
 function ProjectImage({ project, className }) {
@@ -926,50 +898,66 @@ function ProjectCard({ project, index = 0 }) {
 		})]
 	});
 }
-function ResumeCard({ index = 0 }) {
-	const { resume, name } = portfolio.personal;
-	if (!resume) return null;
+function CertificationsCard({ index = 0 }) {
+	const [showAll, setShowAll] = (0, import_react.useState)(false);
+	const visibleCertifications = showAll ? portfolio.certifications : portfolio.certifications.slice(0, 5);
+	const hasMore = portfolio.certifications.length > 2;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(BentoCard, {
 		index,
 		as: "section",
-		"aria-labelledby": "resume-heading",
+		"aria-labelledby": "certifications-heading",
 		className: "flex flex-col",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "flex items-center gap-2",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, {
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Award, {
 					className: "h-3.5 w-3.5 text-cool",
 					"aria-hidden": "true"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CardLabel, { children: "Resume" })]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CardLabel, { children: "Certifications" })]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				id: "resume-heading",
-				className: "mt-3 text-lg font-semibold",
-				children: "The one-page version"
+				id: "certifications-heading",
+				className: "sr-only",
+				children: "Certifications"
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "mt-2 text-sm leading-relaxed text-muted-foreground",
-				children: "Full history, skills and references in a single PDF."
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-				href: resume,
-				download: true,
-				className: "mt-auto inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card-elevated px-4 py-2.5 pt-2.5 text-sm font-medium transition-colors hover:border-border-strong",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, {
-						className: "h-4 w-4",
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mt-4 space-y-3",
+				children: visibleCertifications.map((certification) => {
+					const content = /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "min-w-0",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-sm font-semibold leading-snug",
+							children: certification.name
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+							className: "mt-1 text-xs text-muted-foreground",
+							children: [
+								certification.issuer,
+								" · ",
+								certification.year
+							]
+						})]
+					}), certification.url && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ExternalLink, {
+						className: "h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground",
 						"aria-hidden": "true"
-					}),
-					"Download résumé",
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-						className: "sr-only",
-						children: [
-							" of ",
-							name,
-							" (PDF)"
-						]
-					})
-				]
+					})] });
+					return certification.url ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: certification.url,
+						target: "_blank",
+						rel: "noreferrer",
+						className: "group flex items-center justify-between gap-3 rounded-xl border border-border bg-card-elevated p-3 transition-colors hover:border-border-strong",
+						children: content
+					}, certification.name) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "flex items-center justify-between gap-3 rounded-xl border border-border bg-card-elevated p-3",
+						children: content
+					}, certification.name);
+				})
+			}),
+			hasMore && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				type: "button",
+				onClick: () => setShowAll((prev) => !prev),
+				"aria-expanded": showAll,
+				className: "mt-4 flex items-center justify-center gap-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground",
+				children: showAll ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: ["Show less", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronUp, { className: "h-3.5 w-3.5" })] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: ["See more", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "h-3.5 w-3.5" })] })
 			})
 		]
 	});
@@ -1058,7 +1046,7 @@ function BentoGrid() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cell, {
 					span: "lg:col-span-3",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ResumeCard, { index: 10 })
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CertificationsCard, { index: 10 })
 				})
 			]
 		})

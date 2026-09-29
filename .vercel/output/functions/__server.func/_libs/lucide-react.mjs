@@ -128,16 +128,14 @@ var ArrowUpRight = createLucideIcon("arrow-up-right", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var Briefcase = createLucideIcon("briefcase", [["path", {
-	d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16",
-	key: "jecpp"
-}], ["rect", {
-	width: "20",
-	height: "14",
-	x: "2",
-	y: "6",
-	rx: "2",
-	key: "i6l2r4"
+var Award = createLucideIcon("award", [["path", {
+	d: "m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526",
+	key: "1yiouv"
+}], ["circle", {
+	cx: "12",
+	cy: "8",
+	r: "6",
+	key: "1vp47v"
 }]]);
 /**
 * @license lucide-react v0.575.0 - ISC
@@ -145,46 +143,38 @@ var Briefcase = createLucideIcon("briefcase", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var Download = createLucideIcon("download", [
-	["path", {
-		d: "M12 15V3",
-		key: "m9g1x1"
-	}],
-	["path", {
-		d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",
-		key: "ih7n3h"
-	}],
-	["path", {
-		d: "m7 10 5 5 5-5",
-		key: "brsn70"
-	}]
-]);
+var ChevronDown = createLucideIcon("chevron-down", [["path", {
+	d: "m6 9 6 6 6-6",
+	key: "qrunsl"
+}]]);
 /**
 * @license lucide-react v0.575.0 - ISC
 *
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var FileText = createLucideIcon("file-text", [
+var ChevronUp = createLucideIcon("chevron-up", [["path", {
+	d: "m18 15-6-6-6 6",
+	key: "153udz"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var ExternalLink = createLucideIcon("external-link", [
 	["path", {
-		d: "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z",
-		key: "1oefj6"
+		d: "M15 3h6v6",
+		key: "1q9fwt"
 	}],
 	["path", {
-		d: "M14 2v5a1 1 0 0 0 1 1h5",
-		key: "wfsgrz"
+		d: "M10 14 21 3",
+		key: "gplh6r"
 	}],
 	["path", {
-		d: "M10 9H8",
-		key: "b1mrlr"
-	}],
-	["path", {
-		d: "M16 13H8",
-		key: "t4e002"
-	}],
-	["path", {
-		d: "M16 17H8",
-		key: "z1uh3a"
+		d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6",
+		key: "a6xqqp"
 	}]
 ]);
 /**
@@ -431,4 +421,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { Menu as a, Linkedin as c, Github as d, GitFork as f, ArrowUpRight as g, Briefcase as h, Moon as i, Hammer as l, Download as m, Sun as n, MapPin as o, FileText as p, Star as r, Mail as s, X as t, GraduationCap as u };
+export { ArrowUpRight as _, Menu as a, Linkedin as c, Github as d, GitFork as f, Award as g, ChevronDown as h, Moon as i, Hammer as l, ChevronUp as m, Sun as n, MapPin as o, ExternalLink as p, Star as r, Mail as s, X as t, GraduationCap as u };
