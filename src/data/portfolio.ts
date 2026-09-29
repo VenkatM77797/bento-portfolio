@@ -157,10 +157,10 @@ export const portfolio: Portfolio = {
   ],
 
   github: {
-    username: "github",
-    repos: 48,
-    followers: 612,
-    contributionsLastYear: 1284,
+    username: "VenkatM77797",
+    repos: 37,
+    followers: 10,
+    contributionsLastYear: 917,
     activity: [
       1, 0, 2, 3, 1, 2, 4, 2, 0, 1, 3, 4, 2, 1, 0, 2, 3, 3, 4, 1, 0, 1, 2, 4, 3, 2, 1, 0, 2, 3, 4,
       4, 2, 1, 0, 1, 3, 2, 4, 3, 1, 0, 2, 3, 4, 2, 1, 3, 2, 4, 1, 0,
@@ -372,25 +372,28 @@ export const portfolio: Portfolio = {
       "I maintain a handful of small libraries and review PRs most weekends. Issues and first-time contributors welcome.",
     repos: [
       {
-        name: "bento-portfolio",
-        description: "The open-source template this site is built on.",
-        url: "https://github.com/github",
+        name: "skillgraph",
+        description:
+          "An interactive career and skill roadmap web application.",
+        url: "https://github.com/VenkatM77797/skillgraph",
         language: "TypeScript",
-        stars: 1240,
+        stars: 0,
       },
       {
-        name: "use-persisted-state",
-        description: "A 1kb typed hook for storage-backed React state.",
-        url: "https://github.com/github",
+        name: "roamwise",
+        description:
+          "A premium, editorial-style travel planning application.",
+        url: "https://github.com/VenkatM77797/roamwise",
         language: "TypeScript",
-        stars: 386,
+        stars: 0,
       },
       {
-        name: "pgvector-recipes",
-        description: "Practical patterns for vector search in Postgres.",
-        url: "https://github.com/github",
-        language: "Python",
-        stars: 214,
+        name: "velora-ecommerce",
+        description:
+          "A premium editorial-style e-commerce web application built with React, TypeScript, Tailwind CSS, and Redux Toolkit.",
+        url: "https://github.com/VenkatM77797/velora-ecommerce",
+        language: "TypeScript",
+        stars: 0,
       },
     ],
   },
