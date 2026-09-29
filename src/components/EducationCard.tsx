@@ -7,6 +7,7 @@ export function EducationCard({ index = 0 }: { index?: number }) {
     <BentoCard
       index={index}
       as="section"
+      id="education"
       aria-labelledby="education-heading"
     >
       {/* Header */}
