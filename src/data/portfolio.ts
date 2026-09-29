@@ -177,7 +177,7 @@ export const portfolio: Portfolio = {
       title: "InsightAI",
       description:
         "AI-powered document analysis and productivity workspace with document uploads, AI chat, summaries, insights, risks, opportunities, trends, and action items.",
-      image: "/images/project-insightai.jpg",
+      image: "/images/insight.png",
       tech: ["React", "TypeScript", "AI"],
       github: "https://github.com/VenkatM77797/insightai",
       demo: "https://insightai-3rpm.vercel.app/",
@@ -212,7 +212,7 @@ export const portfolio: Portfolio = {
       title: "Velora E-Commerce",
       description:
         "Premium editorial-style e-commerce web application built with React, TypeScript, Tailwind CSS, and Redux Toolkit.",
-      image: "/images/project-velora.jpg",
+      image: "/images/commerce.png",
       tech: ["React", "TypeScript", "Tailwind CSS", "Redux"],
       github: "https://github.com/VenkatM77797/velora-ecommerce",
       demo: "https://velora-ecommerce-six.vercel.app/",
@@ -234,7 +234,7 @@ export const portfolio: Portfolio = {
     {
       company: "ECHO IT Solutions",
       role: "Software Developer",
-      location: "India",
+      location: "",
       start: "2026",
       end: "Present",
       description:
@@ -248,7 +248,7 @@ export const portfolio: Portfolio = {
       start: "2026",
       end: "2026",
       description:
-        "Developed full-stack web applications using **React.js, Tailwind CSS, Node.js, Express, MongoDB, and Firebase**, including REST APIs and JWT-based authentication. Participated in end-to-end development, testing, debugging, and deployment through project-based internship programs.",
+        "Developed full-stack web applications using React.js, Tailwind CSS, Node.js, Express, MongoDB, and Firebase, including REST APIs and JWT-based authentication. Participated in end-to-end development, testing, debugging, and deployment through project-based internship programs.",
       tech: ["React", "Node.js", "PostgreSQL"],
     },
     {
@@ -278,7 +278,7 @@ export const portfolio: Portfolio = {
       school: "Pittsburg State University",
       degree: "Master of Science",
       field: "Information Technology",
-      location: "Pittsburg, Kansas, USA",
+      location: "Pittsburg, Kansas, United States",
       year: "2024",
       coursework: [
         "Advanced Database Systems",
@@ -396,7 +396,7 @@ export const portfolio: Portfolio = {
 };
 
 /** Tech filters used by the Projects section. "All" is added automatically. */
-export const projectFilters = ["React", "TypeScript", "Node.js", "Python"];
+export const projectFilters = ["React", "RAG", "TypeScript", "LLM", "Python"];
 
 export const navLinks = [
   { label: "About", href: "#about" },
