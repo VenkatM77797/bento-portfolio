@@ -3,14 +3,13 @@ import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
-import { nitro } from "nitro/vite";
 
-// Plain Vite + TanStack Start config (no external wrapper).
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   server: {
     host: "::",
     port: 8080,
   },
+
   resolve: {
     alias: {
       "@": new URL("./src", import.meta.url).pathname,
@@ -24,6 +23,7 @@ export default defineConfig(({ command }) => ({
       "@tanstack/query-core",
     ],
   },
+
   optimizeDeps: {
     include: [
       "react",
@@ -33,11 +33,24 @@ export default defineConfig(({ command }) => ({
       "react/jsx-dev-runtime",
     ],
   },
+
   plugins: [
     tailwindcss(),
-    tsConfigPaths({ projects: ["./tsconfig.json"] }),
+
+    tsConfigPaths({
+      projects: ["./tsconfig.json"],
+    }),
+
     tanstackStart({
-      server: { entry: "server" },
+      server: {
+        entry: "server",
+      },
+
+      prerender: {
+        enabled: true,
+        crawlLinks: true,
+      },
+
       importProtection: {
         behavior: "error",
         client: {
@@ -46,9 +59,7 @@ export default defineConfig(({ command }) => ({
         },
       },
     }),
-    ...(command === "build"
-      ? [nitro({ preset: "vercel" })]
-      : []),
+
     viteReact(),
   ],
-}));
+});
