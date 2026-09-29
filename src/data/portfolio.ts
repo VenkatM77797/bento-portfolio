@@ -50,6 +50,13 @@ export type EducationEntry = {
   coursework: string[];
 };
 
+export type Certification = {
+  name: string;
+  issuer: string;
+  year: string;
+  url?: string;
+};
+
 export type Repo = {
   name: string;
   description: string;
@@ -95,6 +102,7 @@ export type Portfolio = {
   projects: Project[];
   experience: ExperienceEntry[];
   education: EducationEntry[];
+  certifications: Certification[];
   openSource: {
     message: string;
     repos: Repo[];
@@ -299,6 +307,81 @@ export const portfolio: Portfolio = {
         "Computer Networks",
         "Software Engineering",
       ],
+    },
+  ],
+
+  certifications: [
+    {
+      name: "Claude Academy: Introduction to Model Context Protocol",
+      issuer: "Anthropic",
+      year: "2026",
+      url: "https://academy.claude.com/verify/3f6447fca94123d80e55bf159d1aec57",
+    },
+    {
+      name: "Claude Academy: AI Fluency: Framework and foundations",
+      issuer: "Anthropic",
+      year: "2026",
+      url: "https://academy.claude.com/verify/917a75ca43453314f403554d29ec769c",
+    },
+    {
+      name: "Databricks Fundamentals Accreditation",
+      issuer: "Databricks",
+      year: "2026",
+      url: "https://credentials.databricks.com/af17bc8b-d28c-4723-859b-b18f85246d4c#acc.fOip6GAC",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: "YOUR CERTIFICATION NAME",
+      issuer: "ISSUING ORGANIZATION",
+      year: "2026",
+      url: "YOUR_CREDENTIAL_URL",
+    },
+    {
+      name: " Learn DevOps: Docker, Kubernetes, Terraform and Azure DevOps",
+      issuer: "Udemy",
+      year: "2021",
+      url: "https://udemy-certificate.s3.amazonaws.com/image/UC-9926f56d-0703-4ee2-967c-d3aeb02be91e.jpg",
     },
   ],
 

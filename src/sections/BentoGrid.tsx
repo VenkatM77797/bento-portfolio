@@ -9,7 +9,7 @@ import { HeroCard } from "@/components/HeroCard";
 import { OpenSourceCard } from "@/components/OpenSourceCard";
 import { ProfileCard } from "@/components/ProfileCard";
 import { FeaturedProjectCard } from "@/components/ProjectCard";
-import { ResumeCard } from "@/components/ResumeCard";
+import { CertificationsCard } from "@/components/CertificationsCard";
 import { SkillsCard } from "@/components/SkillsCard";
 import { portfolio } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
@@ -64,7 +64,7 @@ export function BentoGrid() {
           <EducationCard index={9} />
         </Cell>
         <Cell span="lg:col-span-3">
-          <ResumeCard index={10} />
+          <CertificationsCard index={10} />
         </Cell>
       </div>
     </div>
