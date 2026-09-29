@@ -180,6 +180,102 @@
   stroke-dashoffset: -32.42;
 }
 
+/* ========================================
+   Contact Social Button Hover Animation
+   Keeps original button size unchanged
+   ======================================== */
+
+.contact-social-btn {
+  --fill-color: #24292f;
+  --hover-text: #ffffff;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.25s ease;
+}
+
+/* Expanding circle */
+.contact-social-btn::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 200%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: var(--fill-color);
+
+  transform: translate(-50%, -50%) scale(0);
+
+  transition:
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+  z-index: -1;
+}
+
+/* Expand circle on hover */
+.contact-social-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Button hover */
+.contact-social-btn:hover {
+  color: var(--hover-text);
+  border-color: var(--fill-color);
+  transform: translateY(-2px);
+}
+
+/* Keep icons/text above circle */
+.contact-social-btn > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* GitHub */
+.contact-github {
+  --fill-color: #24292f;
+  --hover-text: #ffffff;
+}
+
+/* LinkedIn */
+.contact-linkedin {
+  --fill-color: #0a66c2;
+  --hover-text: #ffffff;
+}
+
+/* Dark mode GitHub */
+.dark .contact-github {
+  --fill-color: #f0f6fc;
+  --hover-text: #0d1117;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .contact-social-btn,
+  .contact-social-btn::before {
+    transition: none;
+  }
+}
+
+.contact-social-arrow {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-social-btn:hover .contact-social-arrow {
+  color: currentColor;
+  transform: translate(2px, -2px);
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
