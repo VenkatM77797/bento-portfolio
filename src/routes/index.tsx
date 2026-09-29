@@ -36,7 +36,7 @@ function Index() {
     <div id="top" className="min-h-screen overflow-x-hidden">
       <Header />
 
-      <main>
+      <main className="pt-16">
         <BentoGrid />
         <ProjectsSection />
         <ContactSection />
