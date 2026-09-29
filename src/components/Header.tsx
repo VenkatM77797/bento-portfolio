@@ -51,7 +51,7 @@ export function Header() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="GitHub profile"
-              className="hidden h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-colors hover:text-foreground sm:inline-flex"
+              className="header-social-btn header-github hidden h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-colors hover:text-foreground sm:inline-flex"
             >
               <Github className="h-4 w-4" aria-hidden="true" />
             </a>
@@ -61,7 +61,7 @@ export function Header() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="LinkedIn profile"
-              className="hidden h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-colors hover:text-foreground sm:inline-flex"
+              className="header-social-btn header-linkedin hidden h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground transition-colors hover:text-foreground sm:inline-flex"
             >
               <Linkedin className="h-4 w-4" aria-hidden="true" />
             </a>

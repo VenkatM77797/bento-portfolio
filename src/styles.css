@@ -276,6 +276,218 @@
   transform: translate(2px, -2px);
 }
 
+/* ================================
+   Header Social Buttons
+   Size remains exactly h-9 w-9
+   ================================ */
+
+.header-social-btn {
+  --header-social-fill: #24292f;
+  --header-social-text: #ffffff;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* Expanding circle */
+.header-social-btn::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background: var(--header-social-fill);
+
+  transform: translate(-50%, -50%) scale(0);
+
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+  z-index: -1;
+}
+
+/* Expand on hover */
+.header-social-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.header-social-btn:hover {
+  color: var(--header-social-text);
+  border-color: var(--header-social-fill);
+  transform: translateY(-1px);
+}
+
+/* Icon above animation */
+.header-social-btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+/* GitHub */
+.header-github {
+  --header-social-fill: #24292f;
+  --header-social-text: #ffffff;
+}
+
+/* LinkedIn */
+.header-linkedin {
+  --header-social-fill: #0a66c2;
+  --header-social-text: #ffffff;
+}
+
+/* Dark mode GitHub */
+.dark .header-github {
+  --header-social-fill: #f0f6fc;
+  --header-social-text: #0d1117;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-social-btn,
+  .header-social-btn::before {
+    transition: none;
+  }
+}
+
+/* Project Live Demo Button
+   Original size remains unchanged
+*/
+
+.project-demo-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.25s ease;
+}
+
+.project-demo-btn::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+
+  /* slightly different from normal primary */
+  background: var(--foreground);
+
+  transform: translate(-50%, -50%) scale(0);
+
+  transition:
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+  z-index: -1;
+}
+
+.project-demo-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.project-demo-btn:hover {
+  color: var(--background);
+}
+
+/* Keep text + arrow above animation */
+.project-demo-btn > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Arrow movement */
+.project-demo-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.project-demo-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* Project Source Button
+   Original size remains unchanged
+*/
+
+.project-source-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.25s ease;
+}
+
+.project-source-btn::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+  background: #24292f;
+
+  transform: translate(-50%, -50%) scale(0);
+
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+  z-index: -1;
+}
+
+.project-source-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.project-source-btn:hover {
+  color: #ffffff;
+  border-color: #24292f;
+  transform: translateY(-2px);
+}
+
+/* Keep GitHub icon above animation */
+.project-source-btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark mode */
+.dark .project-source-btn::before {
+  background: #f0f6fc;
+}
+
+.dark .project-source-btn:hover {
+  color: #0d1117;
+  border-color: #f0f6fc;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-source-btn,
+  .project-source-btn::before {
+    transition: none;
+  }
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
