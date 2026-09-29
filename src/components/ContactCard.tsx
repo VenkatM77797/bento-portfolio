@@ -24,8 +24,7 @@ export function ContactCard({ index = 0 }: { index?: number }) {
             Let&apos;s build something together.
           </h2>
           <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Have an interesting project or opportunity? I read every message and usually reply within
-            a day.
+            Have an interesting project or opportunity? I read every message and usually reply within a day.
           </p>
         </div>
 

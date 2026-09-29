@@ -107,11 +107,6 @@ export type Portfolio = {
     message: string;
     repos: Repo[];
   };
-  template: {
-    /** Repository of this template — shown in the footer. */
-    repo: string;
-    name: string;
-  };
 };
 
 export const portfolio: Portfolio = {
@@ -150,7 +145,7 @@ export const portfolio: Portfolio = {
   },
 
   skills: [
-    { label: "Languages", items: ["TypeScript", "JavaScript", "Python", "Java", "SQL"] },
+    { label: "Languages", items: ["TypeScript", "JavaScript", "Python", "SQL"] },
     { label: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "Vite", "Framer Motion"] },
     { label: "Backend", items: ["Node.js", "NestJS", "PostgreSQL", "Redis", "tRPC"] },
     { label: "Tools", items: ["Docker", "GitHub Actions", "Playwright", "Figma", "Vitest"] },
@@ -396,11 +391,6 @@ export const portfolio: Portfolio = {
         stars: 0,
       },
     ],
-  },
-
-  template: {
-    repo: "https://github.com/github",
-    name: "Bento Portfolio",
   },
 };
 
